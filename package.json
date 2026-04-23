@@ -1,0 +1,55 @@
+{
+  "name": "mcp-pdf-utils",
+  "version": "0.1.0",
+  "description": "Local MCP server for PDF manipulation — merge, split, rotate, extract, watermark, metadata. Zero API keys, fully offline. Works with Claude, Cursor, ChatGPT.",
+  "type": "module",
+  "bin": {
+    "mcp-pdf-utils": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "inspect": "npm run build && npx @modelcontextprotocol/inspector node build/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "pdf",
+    "merge",
+    "split",
+    "rotate",
+    "watermark",
+    "extract",
+    "local",
+    "offline",
+    "ai",
+    "claude",
+    "cursor",
+    "model-context-protocol"
+  ],
+  "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/pdf-parse": "^1.1.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}
