@@ -1,12 +1,12 @@
 <div align="center">
 
-# pdf-toolkit-mcp
+# mcp-pdf-utils
 
 **MCP server for PDF manipulation. Merge, split, rotate, watermark, extract text, and more.**
 
 Works with Claude Desktop, Cursor, VS Code, ChatGPT, and any MCP-compatible client.
 
-[![npm](https://img.shields.io/npm/v/pdf-toolkit-mcp)](https://www.npmjs.com/package/pdf-toolkit-mcp)
+[![npm](https://img.shields.io/npm/v/mcp-pdf-utils)](https://www.npmjs.com/package/mcp-pdf-utils)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 </div>
@@ -44,9 +44,9 @@ Add to your `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "pdf-toolkit": {
+    "pdf-tools": {
       "command": "npx",
-      "args": ["-y", "pdf-toolkit-mcp"]
+      "args": ["-y", "mcp-pdf-utils"]
     }
   }
 }
@@ -57,7 +57,7 @@ That's it. Restart Claude Desktop and start asking it to work with PDFs.
 ### Claude Code
 
 ```bash
-claude mcp add pdf-toolkit -- npx -y pdf-toolkit-mcp
+claude mcp add pdf-tools -- npx -y mcp-pdf-utils
 ```
 
 ### Cursor
@@ -67,9 +67,9 @@ Add to your Cursor MCP settings:
 ```json
 {
   "mcpServers": {
-    "pdf-toolkit": {
+    "pdf-tools": {
       "command": "npx",
-      "args": ["-y", "pdf-toolkit-mcp"]
+      "args": ["-y", "mcp-pdf-utils"]
     }
   }
 }
@@ -83,9 +83,9 @@ Add to your VS Code MCP config:
 {
   "mcp": {
     "servers": {
-      "pdf-toolkit": {
+      "pdf-tools": {
         "command": "npx",
-        "args": ["-y", "pdf-toolkit-mcp"]
+        "args": ["-y", "mcp-pdf-utils"]
       }
     }
   }
@@ -108,8 +108,8 @@ Once connected, just talk to your AI naturally:
 ## Development
 
 ```bash
-git clone https://github.com/yourusername/pdf-toolkit-mcp.git
-cd pdf-toolkit-mcp
+git clone https://github.com/zekovdev/mcp-pdf-utils.git
+cd mcp-pdf-utils
 npm install
 npm run dev
 ```
